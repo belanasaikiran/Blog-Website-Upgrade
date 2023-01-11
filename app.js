@@ -75,7 +75,7 @@ app.post("/compose", function (req, res) {
   });
 });
 
-app.get("/posts/:postName", function (req, res) {
+app.get("/posts/:postId", function (req, res) {
   const requestedPostId = req.params.postId;
 
   Post.findOne(
